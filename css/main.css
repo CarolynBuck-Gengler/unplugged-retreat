@@ -86,6 +86,225 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*--------------- Base header and footer styles -------------------------*/
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; /* not sure what difference this makes */
+  color: chartreuse;
+}
+
+/* ***TEMPORARY*** for separating sections */
+.content-wrapper {
+  padding: 10px;
+  margin: 10px;
+}
+
+
+header .content-wrapper
+ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: teal;
+  border: red 1px solid;
+  /* is following needed or not? instructions say we need row wrap for header content wrapper, but 
+  we definitely need this for footer, don't we? */
+  /* flex-direction: column;
+}
+header .content-wrapper { */
+   /* adding this breaks the nav going under logo for mobile, unless that is fixed with something else */
+   flex-flow: row wrap;
+}
+header nav  {
+  display: flex;
+  justify-content: space-around; /* both here and in ul? */
+  align-items: center;
+  color: pink;
+  border: orange 1px solid;
+  flex-flow: row wrap; /* not sure what difference this makes */
+}
+header nav ul {
+  display: flex;
+  /* *** canNOT get the two items to move left and get space between or space evenly */
+  justify-content: space-around;
+  /* align-items: center; */
+  color: gold;
+  border: purple 1px solid;
+  list-style: none;
+}
+/* footer address,
+footer .social,
+footer .copyright {
+  text-align: center;
+} */
+footer {
+  flex-direction: column; /* supercedes the flex-flow above; answer key does NOT do this yet */ 
+}
+/* footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column nowrap; 
+ } */
+/* footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+} */
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: pink;
+  border: orange 1px solid;
+  /* flex-flow: row wrap; */
+}
+/***************************************************
+        Home page main content  
+****************************************************/
+.hero-area  {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: red;
+  border: blue 1px solid;
+  flex-flow: row wrap; /* not sure what difference this makes */
+}
+aside .content-wrapper  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  border: green 1px solid;
+  flex-flow: row wrap; /* better than column because this changes depending on width
+   though might need column for mobile if the breakpoints and element widths don't do 
+   the trick down the line  */
+}
+aside .signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  border: green 1px solid;
+  flex-direction: column;
+}
+
+.features .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: orchid;
+  border: teal 1px solid;
+  /* flex-direction: column; */
+  flex-flow: row wrap; /* not sure what difference this makes, but it got rid
+  of problem of header not being justified left */
+}
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: burlywood;
+  border: peachpuff 1px solid;
+  /* flex-direction: column; */
+  flex-flow: row wrap; /* not sure what difference this makes, 
+  definitely not looking right in bigger screen */
+}
+/* next for testing only, until icons are added  */
+.feature-icon {
+  color: red;
+}
+
+.reviews .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: yellowgreen;
+  border: blueviolet 1px solid;
+  /* flex-direction: column; */
+  flex-flow: row wrap; /* not sure what difference this makes */
+}
+
+/***************************************************
+        FAQ page main content  
+****************************************************/
+/* is this one needed? */
+.faq-page .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* left-justify */
+  color: brown;
+  border: cornflowerblue 1px solid;
+  flex-direction: column;
+}
+.faq-page .questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellowgreen;
+  border: blueviolet 1px solid;
+  /* flex-direction: column; */
+  flex-flow: row wrap; /* not sure what difference this makes */
+}
+
+/***************************************************
+        About page main content  
+****************************************************/
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: violet;
+  border: blueviolet 1px solid;
+  /* flex-direction: column; */
+  flex-flow: row wrap; /* not sure what difference this makes */
+}
+/* .mission .mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: coral;
+  border: indigo 1px solid;
+  flex-flow: row wrap; not sure what difference this makes
+} */
+
+/* temporary: make space for map */
+.map {
+  border: blue 1px dotted;
+  padding: 40px;
+  margin: 30px;
+}
+.map p {
+  text-align: center;
+}
+
+/* .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: yellowgreen;
+  border: violet 1px solid;
+  flex-direction: column; */
+  /*flex-flow: row wrap; /* not sure what difference this makes */
+/* } */
+/* .contact-section .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: yellowgreen;
+  border: violet 1px solid;
+  /* flex-direction: column; */
+  /* flex-flow: row wrap; not sure what difference this makes */
+/* } */ 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 
 /* ==========================================================================
    Helper classes
