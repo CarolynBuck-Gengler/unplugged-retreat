@@ -374,7 +374,7 @@ aside .signup-form input {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: yellowgreen;
+  color: blueviolet;
   border: blueviolet 1px solid;
   /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes */
@@ -599,7 +599,7 @@ aside .signup-form input {
   }
   footer .social-icons {
     justify-content: space-around;
-    margin: 0 20px;
+    margin: 0 75px;
   }
   /**************************** styles for main page content *******************/
   .hero-area h1 {
@@ -684,6 +684,7 @@ aside .signup-form input {
   }
   .faq-page .questions {
     justify-content: space-between;
+    align-items: flex-start;
   }
   .question {
     flex-basis: 45%;
@@ -692,14 +693,24 @@ aside .signup-form input {
 }
   
 @media only screen and (min-width: 1200px) {
-/*Desktop styles here*/
-  /* for testing purposes */
+/********************* Desktop styles here ************************************/
+/********************* body, header, and footer styles for tablet ************/
+
+/* for testing purposes */
   body {
     background-color: rgb(199, 213, 238);
   }
-  .features .content-wrapper {
+  /* .features .content-wrapper {
     width: 80%;
-  }
+  } */
+  .content-wrapper,
+  header .content-wrapper,
+  footer .content-wrapper
+  /* .hero-area .content-wrapper  */
+  {
+    width: 80%;
+  } 
+
 }
 /* @media only screen and (min-width: 35em) { */
   /* Style adjustments for viewports that meet the condition */
