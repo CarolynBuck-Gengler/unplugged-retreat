@@ -349,14 +349,26 @@ aside .signup-form input {
         FAQ page main content  
 ****************************************************/
 /* is this one needed? */
-.faq-page .content-wrapper {
+.faq-page {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* left-justify */
+  align-items: center;
+  flex-flow: row wrap;
+  /* flex-direction: column; */
+}
+.faq-page .content-wrapper {
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-start; left-justify */
   color: brown;
   border: cornflowerblue 1px solid;
-  flex-direction: column;
-  width: 90%;
+  /* flex-direction: column; */
+  /* width: 90%; */
+  margin: 50px 0 0 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; */
 }
 .faq-page .questions {
   display: flex;
@@ -366,6 +378,12 @@ aside .signup-form input {
   border: blueviolet 1px solid;
   /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes */
+}
+.faq-page h2 {
+  margin-bottom: 40px;
+}
+.question {
+  margin-bottom: 50px;
 }
 
 /***************************************************
@@ -652,6 +670,23 @@ aside .signup-form input {
   .contact-content .general-info,
   .contact-content .facilitator-contact {
     width: 45%;
+  }
+
+  /**************************** styles for faq page content *******************/
+  .faq-page {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .faq-page .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .faq-page .questions {
+    justify-content: space-between;
+  }
+  .question {
+    flex-basis: 45%;
   }
 
 }
