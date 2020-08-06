@@ -86,24 +86,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* for testing purposes ONLY */
+body {
+  background-color: lavender;
+}
 /*--------------- Base header and footer styles -------------------------*/
 header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes */
-  color: chartreuse;
+  color: royalblue;
 }
 header {
   padding: 15px 0 20px 0;
 }
-
-/* ***TEMPORARY*** for separating sections */
-/* .content-wrapper {
-  padding: 10px;
-  margin: 10px;
-} */
-
+.content-wrapper {
+  width: 90%;
+}
 
 header .content-wrapper
  {
@@ -119,7 +119,7 @@ header .content-wrapper
 header .content-wrapper { */
    /* adding this breaks the nav going under logo for mobile, unless that is fixed with something else */
    flex-flow: row wrap;
-   width: 100%;
+   width: 100%; /*setting 100% here to allow for the header-divider to be the full width*/
 }
 .logo {
   display: flex;
@@ -130,24 +130,20 @@ header .content-wrapper { */
   width: 100%;
 }
 .header-divider hr {
-
   margin: 10px 0 15px 0;;
-
 }
 header nav  {
   display: flex;
   justify-content: space-around; /* both here and in ul? */
   align-items: center;
-  color: pink;
+  color: orange;
   border: orange 1px solid;
   flex-flow: row wrap; /* not sure what difference this makes */
   width: 100%;
 }
 header nav ul {
   display: flex;
-  /* *** canNOT get the two items to move left and get space between or space evenly */
   justify-content: space-between;
-  /* align-items: center; */
   color: gold;
   border: purple 1px solid;
   list-style: none;
@@ -160,6 +156,9 @@ footer .social,
 footer .copyright {
   text-align: center;
 } */
+footer address, footer .social {
+  border: royalblue dotted 1px;
+}
 footer {
   flex-direction: column; /* supercedes the flex-flow above; answer key does NOT do this yet */ 
   background-color: rgb(235, 235, 235);
@@ -185,8 +184,8 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: pink;
-  border: orange 1px solid;
+  color: hotpink;
+  border: hotpink 1px solid;
   /* flex-flow: row wrap; */
 }
 footer h4 {
@@ -199,16 +198,21 @@ footer .contact, footer .social {
 /***************************************************
         Home page main content  
 ****************************************************/
-.hero-area  {
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-area .content-wrapper {
   display: flex;
   justify-content: flex-start; /* left justify the text*/ 
   align-items: center;
-  color: red;
+  color: blue;
   border: blue 1px solid;
   flex-flow: row wrap; /* not sure what difference this makes */
 }
 .hero-area h1 {
-  padding: 55px 20px 0 20px;
+  padding-top: 55px;
 }
 aside, .features, .reviews {
   display: flex;
@@ -221,27 +225,38 @@ aside .content-wrapper  {
   justify-content: center;
   align-items: center;
   color: orange;
-  border: green 1px solid;
+  border: orange 1px solid;
   flex-flow: row wrap; /* better than column because this changes depending on width
    though might need column for mobile if the breakpoints and element widths don't do 
    the trick down the line  */
-  width: 90%;
+  /* width: 90%; */
 }
 aside h3 {
   margin: 0;
-  padding: 25px 0 10px 0;
+  /* padding: 30px 0 10px 0; */
 }
 aside p {
   margin: 0;
   /* padding: 10px 0 35px 0; */
   padding: 0;
 }
+aside .form-description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: yellowgreen;
+  border: yellowgreen 1px solid;
+  flex-direction: column;
+  margin: 0;
+  padding: 35px 0 30px 0;
+  width: 100%; /*100% of containing element*/
+}
 
 aside .signup-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
+  color: green;
   border: green 1px solid;
   flex-direction: column;
   margin: 0;
@@ -267,12 +282,12 @@ aside .signup-form input {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: orchid;
+  color: teal;
   border: teal 1px solid;
   /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes, but it got rid
   of problem of header not being justified left */
-  width: 90%;
+  /* width: 90%; */
   padding-bottom: 65px;
 }
 .features .features-items {
@@ -302,14 +317,22 @@ aside .signup-form input {
 
 .reviews .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  color: yellowgreen;
+  color: blueviolet;
   border: blueviolet 1px solid;
   /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes */
-  width: 90%;
+  /* width: 90%; */
   padding-bottom: 45px;
+}
+.home-page .reviews .image-placeholder {
+  width: 100%;
+  height: 200px;
+  border: tan dotted 1px;
+}
+.image-placeholder p {
+  text-align: center;
 }
 .home-page .reviews h2 {
   padding: 55px 0 30px 0;
@@ -406,6 +429,8 @@ aside .signup-form input {
   width: 90%;
 }
 
+	
+
 
 /* ==========================================================================
    Helper classes
@@ -495,9 +520,126 @@ aside .signup-form input {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+/* body, header, and footer styles for tablet */
+  /* for testing purposes ONLY */
+  body {
+    background-color: rgb(238, 206, 211);
+  }
+  .content-wrapper,
+  header .content-wrapper,
+  footer .content-wrapper
+  /* .hero-area .content-wrapper  */
+  {
+    width: 83%;
+  } 
+  /* .features .content-wrapper {
+    width: 83%;
+  } */
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+  header .logo, header nav {
+    width: 40%;
+  }
+  header .logo {
+    justify-content: flex-start;
+  }
+  .header-divider {
+    display: none;
+  }
+  header nav {
+    justify-content: flex-end;
+  }
+  footer {
+    flex-direction: row wrap;
+    justify-content: space-around;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row wrap;
+  }
+  footer .contact, footer .social {
+    padding-top: 90px;
+  } 
+  footer h4 {
+    margin: 0;
+    padding-bottom: 35px;
+  } 
+  footer .contact, footer .social {
+    width: 50%;
+  }
+  footer .social-icons {
+    justify-content: space-around;
+    margin: 0 20px;
+  }
+  /* styles for main page content */
+  .hero-area h1 {
+    width: 60%;
+  }
+  aside .content-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  aside .form-description,
+  aside .signup-form {
+    width: 45%;
+  }
+  aside .content-wrapper h3, aside .content-wrapper input {
+    width: 100%;
+  }
+  aside .content-wrapper h3 {
+    padding-bottom: 15px;
+  }
+
+  .features .features-items {
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    border: hotpink 1px solid;
+  }
+  .features article .feature-description {
+    width: 100%;
+    color: darkcyan
+  }
+  .reviews article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+  .home-page .reviews article .image-placeholder, 
+  .reviews article .lacrue-review {
+    width: 49%;
+  }
+  .reviews article .lacrue-review h3 {
+    padding-top: 0;
+  }
+
 }
+  
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+  /* for testing purposes */
+  body {
+    background-color: rgb(199, 213, 238);
+  }
+  .features .content-wrapper {
+    width: 80%;
+  }
+}
+/* @media only screen and (min-width: 35em) { */
+  /* Style adjustments for viewports that meet the condition */
+/* } */
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
