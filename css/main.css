@@ -603,7 +603,7 @@ aside .signup-form input {
   }
   /**************************** styles for main page content *******************/
   .hero-area h1 {
-    width: 60%;
+    width: 85%;
   }
   aside .content-wrapper {
     justify-content: space-between;
@@ -638,13 +638,13 @@ aside .signup-form input {
   }
   .reviews article {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-flow: row wrap;
   }
   .home-page .reviews article .image-placeholder, 
   .reviews article .lacrue-review {
-    width: 49%;
+    width: 48.75%;
   }
   .reviews article .lacrue-review h3 {
     padding-top: 0;
@@ -711,6 +711,26 @@ aside .signup-form input {
     width: 80%;
   } 
 
+/**************************** styles for main page content *******************/
+  .hero-area h1 {
+    width: 70%;
+  }
+  aside .content-wrapper {
+    justify-content: space-around;
+    /* align-items: flex-start; */
+  }
+
+  aside .form-description,
+  aside .signup-form {
+    width: 33.3%;
+  }
+  .features article {
+    width: 25%; /* can't be much lower because then get four items across*/
+  }
+  .home-page .reviews article .image-placeholder, 
+  .reviews article .lacrue-review {
+    width: 48%;
+  }
 }
 /* @media only screen and (min-width: 35em) { */
   /* Style adjustments for viewports that meet the condition */
