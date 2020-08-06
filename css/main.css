@@ -371,15 +371,22 @@ aside .signup-form input {
 /***************************************************
         About page main content  
 ****************************************************/
-.mission {
+.mission,
+.contact-section {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  color: violet;
-  border: blueviolet 1px solid;
+  /* justify-content: center; */
+  /* align-items: flex-start;   */
+  align-items: center;
   /* flex-direction: column; */
-  flex-flow: row wrap; /* not sure what difference this makes */
-  width: 90%;
+  /* flex-flow: row wrap; /* not sure what difference this makes */
+  flex-direction: column;
+  /* width: 90%; */
+}
+.mission .content-wrapper,
+.contact-section .content-wrapper {
+  color: blueviolet;
+  border: blueviolet 1px solid;
+
 }
 /* .mission .mission-content {
   display: flex;
@@ -419,7 +426,7 @@ aside .signup-form input {
   /* flex-direction: column; */
   /* flex-flow: row wrap; not sure what difference this makes */
 /* } */ 
-.contact-section {
+/* .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,7 +434,7 @@ aside .signup-form input {
   color: violet;
   border: yellowgreen 1px solid;
   width: 90%;
-}
+} */
 
 	
 
@@ -521,8 +528,8 @@ aside .signup-form input {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-/*Tablet styles here*/
-/* body, header, and footer styles for tablet */
+/********************* Tablet styles here ************************************/
+/********************* body, header, and footer styles for tablet ************/
   /* for testing purposes ONLY */
   body {
     background-color: rgb(238, 206, 211);
@@ -576,7 +583,7 @@ aside .signup-form input {
     justify-content: space-around;
     margin: 0 20px;
   }
-  /* styles for main page content */
+  /**************************** styles for main page content *******************/
   .hero-area h1 {
     width: 60%;
   }
@@ -623,6 +630,28 @@ aside .signup-form input {
   }
   .reviews article .lacrue-review h3 {
     padding-top: 0;
+  }
+
+  /**************************** styles for about page content *******************/
+
+  /* combine these below if nothing more changes */
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mission-content p {
+    width: 45%;
+  }
+  .contact-section h2 {
+    width: 85%;
+  }
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-content .general-info,
+  .contact-content .facilitator-contact {
+    width: 45%;
   }
 
 }
