@@ -619,6 +619,9 @@ aside .signup-form input {
   aside .content-wrapper h3 {
     padding-bottom: 15px;
   }
+  aside .signup-form input {
+    height: 40px;
+  }
 
   .features .features-items {
     justify-content: space-around;
@@ -724,6 +727,9 @@ aside .signup-form input {
   aside .signup-form {
     width: 33.3%;
   }
+  aside .signup-form input {
+    height: 50px;
+}
   .features article {
     width: 25%; /* can't be much lower because then get four items across*/
   }
