@@ -96,13 +96,13 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes */
-  color: royalblue;
 }
 header {
   padding: 15px 0 20px 0;
 }
 .content-wrapper {
   width: 90%;
+  border: red 1px solid; /*for testing only*/
 }
 
 header .content-wrapper
@@ -110,16 +110,8 @@ header .content-wrapper
   display: flex;
   justify-content: center;
   align-items: center;
-  color: teal;
-  border: red 1px solid;
-  /* is following needed or not? instructions say we need row wrap for header content wrapper, but 
-  we definitely need this for footer, don't we? */
-  /* flex-direction: column;
-}
-header .content-wrapper { */
-   /* adding this breaks the nav going under logo for mobile, unless that is fixed with something else */
-   flex-flow: row wrap;
-   width: 100%; /*setting 100% here to allow for the header-divider to be the full width*/
+  flex-flow: row wrap;
+  width: 100%; /*setting 100% here to allow for the header-divider to be the full width*/
 }
 .logo {
   display: flex;
@@ -136,45 +128,23 @@ header nav  {
   display: flex;
   justify-content: space-around; /* both here and in ul? */
   align-items: center;
-  color: orange;
-  border: orange 1px solid;
   flex-flow: row wrap; /* not sure what difference this makes */
   width: 100%;
 }
 header nav ul {
   display: flex;
   justify-content: space-between;
-  color: gold;
-  border: purple 1px solid;
   list-style: none;
   width: 45%;
   padding: 0; /*override default*/
   margin: 0; /*override default*/
 }
-/* footer address,
-footer .social,
-footer .copyright {
-  text-align: center;
-} */
-footer address, footer .social {
+/* footer address, footer .social {
   border: royalblue dotted 1px;
-}
+} */
 footer {
   flex-direction: column; /* supercedes the flex-flow above; answer key does NOT do this yet */ 
-  background-color: rgb(235, 235, 235);
 }
-/* footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column nowrap; 
- } */
-/* footer .footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-} */
 footer .content-wrapper {
   width: 60%;
   margin-bottom: 50px;
@@ -184,9 +154,6 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: hotpink;
-  border: hotpink 1px solid;
-  /* flex-flow: row wrap; */
 }
 footer h4 {
   margin: 0;
@@ -207,8 +174,6 @@ footer .contact, footer .social {
   display: flex;
   justify-content: flex-start; /* left justify the text*/ 
   align-items: center;
-  color: blue;
-  border: blue 1px solid;
   flex-flow: row wrap; /* not sure what difference this makes */
 }
 .hero-area h1 {
@@ -217,19 +182,15 @@ footer .contact, footer .social {
 aside, .features, .reviews {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 aside .content-wrapper  {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: orange;
-  border: orange 1px solid;
   flex-flow: row wrap; /* better than column because this changes depending on width
    though might need column for mobile if the breakpoints and element widths don't do 
    the trick down the line  */
-  /* width: 90%; */
 }
 aside h3 {
   margin: 0;
@@ -244,8 +205,6 @@ aside .form-description {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: yellowgreen;
-  border: yellowgreen 1px solid;
   flex-direction: column;
   margin: 0;
   padding: 35px 0 30px 0;
@@ -256,8 +215,6 @@ aside .signup-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: green;
-  border: green 1px solid;
   flex-direction: column;
   margin: 0;
   padding: 35px 0 30px 0;
@@ -282,24 +239,16 @@ aside .signup-form input {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: teal;
-  border: teal 1px solid;
-  /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes, but it got rid
   of problem of header not being justified left */
-  /* width: 90%; */
   padding-bottom: 65px;
 }
 .features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: burlywood;
-  border: peachpuff 1px solid;
-  /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes, 
   definitely not looking right in bigger screen */
-  /* width: 60%; /* here or features .article ? */
 }
 .features article {
   width: 62.5%;
@@ -319,17 +268,13 @@ aside .signup-form input {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  color: blueviolet;
-  border: blueviolet 1px solid;
-  /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes */
-  /* width: 90%; */
   padding-bottom: 45px;
 }
 .home-page .reviews .image-placeholder {
   width: 100%;
   height: 200px;
-  border: tan dotted 1px;
+  border: hotpink dotted 1px;
 }
 .image-placeholder p {
   text-align: center;
@@ -354,29 +299,14 @@ aside .signup-form input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /* flex-direction: column; */
 }
 .faq-page .content-wrapper {
-  /* display: flex;
-  justify-content: center;
-  align-items: flex-start; left-justify */
-  color: brown;
-  border: cornflowerblue 1px solid;
-  /* flex-direction: column; */
-  /* width: 90%; */
   margin: 50px 0 0 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap; */
 }
 .faq-page .questions {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: blueviolet;
-  border: blueviolet 1px solid;
-  /* flex-direction: column; */
   flex-flow: row wrap; /* not sure what difference this makes */
 }
 .faq-page h2 {
@@ -392,32 +322,19 @@ aside .signup-form input {
 .mission,
 .contact-section {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: flex-start;   */
   align-items: center;
-  /* flex-direction: column; */
-  /* flex-flow: row wrap; /* not sure what difference this makes */
   flex-direction: column;
-  /* width: 90%; */
 }
-.mission .content-wrapper,
+/* .mission .content-wrapper,
 .contact-section .content-wrapper {
   color: blueviolet;
   border: blueviolet 1px solid;
 
-}
-/* .mission .mission-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  color: coral;
-  border: indigo 1px solid;
-  flex-flow: row wrap; not sure what difference this makes
 } */
 
 /* temporary: make space for map */
 .map {
-  border: blue 1px dotted;
+  border: hotpink 1px dotted;
   padding: 40px 0;
   margin: 30px 0;
   width: 100%;
@@ -425,36 +342,6 @@ aside .signup-form input {
 .map p {
   text-align: center;
 }
-
-/* .contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  color: yellowgreen;
-  border: violet 1px solid;
-  flex-direction: column; */
-  /*flex-flow: row wrap; /* not sure what difference this makes */
-/* } */
-/* .contact-section .content-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  color: yellowgreen;
-  border: violet 1px solid;
-  /* flex-direction: column; */
-  /* flex-flow: row wrap; not sure what difference this makes */
-/* } */ 
-/* .contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  color: violet;
-  border: yellowgreen 1px solid;
-  width: 90%;
-} */
-
-	
 
 
 /* ==========================================================================
@@ -555,13 +442,9 @@ aside .signup-form input {
   .content-wrapper,
   header .content-wrapper,
   footer .content-wrapper
-  /* .hero-area .content-wrapper  */
   {
     width: 83%;
   } 
-  /* .features .content-wrapper {
-    width: 83%;
-  } */
   header .content-wrapper {
     justify-content: space-between;
   }
@@ -633,11 +516,9 @@ aside .signup-form input {
     align-items: center;
     flex-direction: column;
     width: 35%;
-    border: hotpink 1px solid;
   }
   .features article .feature-description {
     width: 100%;
-    color: darkcyan
   }
   .reviews article {
     display: flex;
@@ -731,7 +612,7 @@ aside .signup-form input {
     height: 50px;
 }
   .features article {
-    width: 25%; /* can't be much lower because then get four items across*/
+    width: 26%; /* can't be lower because then get four items across*/
   }
   .home-page .reviews article .image-placeholder, 
   .reviews article .lacrue-review {
