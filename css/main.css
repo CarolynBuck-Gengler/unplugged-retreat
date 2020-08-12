@@ -88,8 +88,98 @@ textarea {
    ========================================================================== */
 /* for testing purposes ONLY */
 body {
-  background-color: lavender;
+  background-color: rgb(191, 191, 211);
 }
+/* General Styles */
+/* later go back and merge these with identically named identifiers */
+ 
+html {
+  font-size: 16px; /* base font size */
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1em;
+}
+ 
+ul {
+  font-family: 'Open Sans', sans-serif; 
+  /* font-size: 1.125em; 18 pt mobile */
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125em; /* 18 pt mobile */
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em; /* 36 pt mobile */
+  line-height: 1.2; /* auto, want 43.2 mobile */
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em; /* want 30px mobile*/
+  line-height: 1.2; /* auto, want 36 mobile */
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em; /* 18px mobile */
+  line-height: 1.2; /* auto, want 21.6px mobile */
+}
+
+ 
+p {
+  font-size: 0.875em;
+  line-height: 1.643; /* leading 18 --> want 23px mobile */
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-style: normal;
+}
+ 
+.content-wrapper {
+ 
+}
+.email-address {
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.2;
+}
+/* temporary until later step when button formally addressed */
+.button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  line-height: 1.2;
+  text-transform: uppercase;  
+}
+footer a {
+  font-size: 0.875em; /* want 14px mobile */
+  line-height: 1.2; /* leading auto: want 16.8px mobile */
+  text-transform: none;
+}
+.copyright p {
+  line-height: 1.2;
+}
+.contact-content p {
+  line-height: 1.2; /* auto: want 16.8 mobile */
+}
+
+
 /*--------------- Base header and footer styles -------------------------*/
 header, footer {
   display: flex;
@@ -281,6 +371,7 @@ aside .signup-form input {
 }
 .home-page .reviews h2 {
   padding: 55px 0 30px 0;
+  line-height: 1.5; /* font-size 30 leading 30, want 45 mobile */
 }
 .reviews h3 {
   margin: 0;
@@ -311,6 +402,10 @@ aside .signup-form input {
 }
 .faq-page h2 {
   margin-bottom: 40px;
+  line-height: 1.5; /* fontsize 30 leading 30 --> want 45px mobile */
+}
+.faq-page h4 {
+  line-height: 1.333; /* fontsize 18 leading 24 --> want 30px mobile*/
 }
 .question {
   margin-bottom: 50px;
@@ -437,7 +532,7 @@ aside .signup-form input {
 /********************* body, header, and footer styles for tablet ************/
   /* for testing purposes ONLY */
   body {
-    background-color: rgb(238, 206, 211);
+    background-color: rgb(211, 183, 187);
   }
   .content-wrapper,
   header .content-wrapper,
@@ -582,7 +677,7 @@ aside .signup-form input {
 
 /* for testing purposes */
   body {
-    background-color: rgb(199, 213, 238);
+    background-color: rgb(160, 186, 232);
   }
   /* .features .content-wrapper {
     width: 80%;
