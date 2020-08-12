@@ -91,7 +91,7 @@ body {
   background-color: rgb(191, 191, 211);
 }
 /* General Styles */
-/* later go back and merge these with identically named identifiers */
+/* ***later go back and merge these with identically named identifiers */
  
 html {
   font-size: 16px; /* base font size */
@@ -555,6 +555,9 @@ aside .signup-form input {
   header nav {
     justify-content: flex-end;
   }
+  header nav a {
+    font-size: 1em;
+  }
   footer {
     flex-direction: row wrap;
     justify-content: space-around;
@@ -582,6 +585,12 @@ aside .signup-form input {
   /**************************** styles for main page content *******************/
   .hero-area h1 {
     width: 85%;
+    font-size: 3em; /* want 48px tablet */
+    line-height: 1.5; /* 48/48 -> want 72px tablet */
+  }
+  h3 { /* ***right now just for aside, but I don't think it's needed anywhere else */
+    font-size: 1.5em;
+    line-height: 1.625; /*24/30 -> want 39px tablet*/
   }
   aside .content-wrapper {
     justify-content: space-between;
@@ -601,6 +610,11 @@ aside .signup-form input {
     height: 40px;
   }
 
+  .features h2,
+  .faq-page h2 {
+    font-size: 2.25em;
+    line-height: 1.667; /* tablet 36/48 --> want 60px */
+  }
   .features .features-items {
     justify-content: space-around;
     align-items: baseline;
@@ -614,6 +628,15 @@ aside .signup-form input {
   }
   .features article .feature-description {
     width: 100%;
+  }
+
+  .home-page .reviews h2 {
+    font-size: 2.25em; /* tablet: want 36 */
+    line-height: 1.2; /*tablet: auto --> want 43.2 */
+  }
+  .home-page .reviews h3 {
+    font-size: 1.5em; /* tablet: want 24 */
+    line-height: 1.625; /*tablet: 24/30 --> want 39 */
   }
   .reviews article {
     display: flex;
@@ -636,11 +659,23 @@ aside .signup-form input {
     display: flex;
     justify-content: space-between;
   }
+  .mission h2 {
+    /* tablet: 36/auto --> want lh 43.2 */
+    font-size: 2.25em;
+    line-height: 1.2;
+  }
   .mission-content p {
     width: 45%;
   }
   .contact-section h2 {
     width: 85%;
+    /* tablet: 36/48 --> want lh 60px */
+    font-size: 2.25em;
+    line-height: 1.667;
+  }
+  .contact-section h4 {
+    /* tablet: 24/auto --> want lh 28.8; shouldn't need to respecify lh*/
+    font-size: 1.5em;
   }
   .contact-content {
     display: flex;
@@ -650,11 +685,20 @@ aside .signup-form input {
   .contact-content .facilitator-contact {
     width: 45%;
   }
+  .contact-content p {
+    /* tablet: 14/18 instead of 14/auto --> want lh 23px  */
+    line-height: 1.643;
+  }
 
   /**************************** styles for faq page content *******************/
   .faq-page {
     flex-direction: column;
     justify-content: space-between;
+  }
+  .faq-page h4 {
+    /* tablet 14/18 --> 23px */
+    font-size: 0.875em;
+    line-height: 1.643;
   }
   .faq-page .content-wrapper {
     display: flex;
