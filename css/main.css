@@ -117,26 +117,30 @@ a {
 
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em; /* 36 pt mobile */
-  line-height: 1.2; /* auto, want 43.2 mobile */
+  /* mobile: 36/auto --> lh 43.2 */
+  font-size: 2.25em;
+  line-height: 1.2;
 }
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em; /* want 30px mobile*/
-  line-height: 1.2; /* auto, want 36 mobile */
+  /* mobile: 30/auto --> lh 36 */
+  font-size: 1.875em;
+  line-height: 1.2;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125em; /* 18px mobile */
-  line-height: 1.2; /* auto, want 21.6px mobile */
+  /* mobile: 18/auto --> lh 21.6 */
+  font-size: 1.125em;
+  line-height: 1.2;
 }
 
  
 p {
+  /* mobile: 14/18 --> lh 23 */
   font-size: 0.875em;
-  line-height: 1.643; /* leading 18 --> want 23px mobile */
+  line-height: 1.643;
 }
  
 img {
@@ -168,15 +172,17 @@ address {
   text-transform: uppercase;  
 }
 footer a {
-  font-size: 0.875em; /* want 14px mobile */
-  line-height: 1.2; /* leading auto: want 16.8px mobile */
+  /* mobile: 14/auto --> lh 16.8 */
+  font-size: 0.875em;
+  line-height: 1.2;
   text-transform: none;
 }
 .copyright p {
   line-height: 1.2;
 }
 .contact-content p {
-  line-height: 1.2; /* auto: want 16.8 mobile */
+  /* mobile: 14/auto --> lh 16.8 */
+  line-height: 1.2;
 }
 
 
@@ -371,7 +377,8 @@ aside .signup-form input {
 }
 .home-page .reviews h2 {
   padding: 55px 0 30px 0;
-  line-height: 1.5; /* font-size 30 leading 30, want 45 mobile */
+  /* mobile: 30/30 --> lh 45  */
+  line-height: 1.5; 
 }
 .reviews h3 {
   margin: 0;
@@ -402,10 +409,12 @@ aside .signup-form input {
 }
 .faq-page h2 {
   margin-bottom: 40px;
-  line-height: 1.5; /* fontsize 30 leading 30 --> want 45px mobile */
+  /* mobile: 30/30 --> lh 45 */
+  line-height: 1.5;
 }
 .faq-page h4 {
-  line-height: 1.333; /* fontsize 18 leading 24 --> want 30px mobile*/
+  /* mobile: 18/24 --> lh 30 */
+  line-height: 1.333;
 }
 .question {
   margin-bottom: 50px;
@@ -585,12 +594,14 @@ aside .signup-form input {
   /**************************** styles for main page content *******************/
   .hero-area h1 {
     width: 85%;
-    font-size: 3em; /* want 48px tablet */
-    line-height: 1.5; /* 48/48 -> want 72px tablet */
+    /*tablet: 48/48 -> lh 72px  */
+    font-size: 3em;
+    line-height: 1.5; 
   }
   h3 { /* ***right now just for aside, but I don't think it's needed anywhere else */
+    /* tablet: 24/30 -> lh 39px */
     font-size: 1.5em;
-    line-height: 1.625; /*24/30 -> want 39px tablet*/
+    line-height: 1.625; 
   }
   aside .content-wrapper {
     justify-content: space-between;
@@ -612,8 +623,9 @@ aside .signup-form input {
 
   .features h2,
   .faq-page h2 {
+    /* tablet: 36/48 --> lh 60px */
     font-size: 2.25em;
-    line-height: 1.667; /* tablet 36/48 --> want 60px */
+    line-height: 1.667; 
   }
   .features .features-items {
     justify-content: space-around;
@@ -631,12 +643,14 @@ aside .signup-form input {
   }
 
   .home-page .reviews h2 {
-    font-size: 2.25em; /* tablet: want 36 */
-    line-height: 1.2; /*tablet: auto --> want 43.2 */
+    /* tablet: 36/auto --> lh 43.2 */
+    font-size: 2.25em;
+    line-height: 1.2;
   }
   .home-page .reviews h3 {
-    font-size: 1.5em; /* tablet: want 24 */
-    line-height: 1.625; /*tablet: 24/30 --> want 39 */
+    /* tablet: 24/30 --> lh 39 */
+    font-size: 1.5em; 
+    line-height: 1.625; 
   }
   .reviews article {
     display: flex;
@@ -660,7 +674,7 @@ aside .signup-form input {
     justify-content: space-between;
   }
   .mission h2 {
-    /* tablet: 36/auto --> want lh 43.2 */
+    /* tablet: 36/auto -->  lh 43.2 */
     font-size: 2.25em;
     line-height: 1.2;
   }
@@ -669,12 +683,12 @@ aside .signup-form input {
   }
   .contact-section h2 {
     width: 85%;
-    /* tablet: 36/48 --> want lh 60px */
+    /* tablet: 36/48 --> lh 60px */
     font-size: 2.25em;
     line-height: 1.667;
   }
   .contact-section h4 {
-    /* tablet: 24/auto --> want lh 28.8; shouldn't need to respecify lh*/
+    /* tablet: 24/auto --> lh 28.8; don't need to respecify lh*/
     font-size: 1.5em;
   }
   .contact-content {
@@ -686,7 +700,7 @@ aside .signup-form input {
     width: 45%;
   }
   .contact-content p {
-    /* tablet: 14/18 instead of 14/auto --> want lh 23px  */
+    /* tablet: 14/18 instead of 14/auto -->  lh 23px  */
     line-height: 1.643;
   }
 
