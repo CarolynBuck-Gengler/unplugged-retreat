@@ -111,7 +111,9 @@ a {
   color: #e2e3ed;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.125em; /* 18 pt mobile */
+  /* mobile: 18/auto/bold --> lh 21.6 */
+  font-size: 1.125em;
+  line-height: 1.2;
   font-weight: bold;
 }
 
@@ -565,6 +567,7 @@ aside .signup-form input {
     justify-content: flex-end;
   }
   header nav a {
+    /* tablet: 16/auto */
     font-size: 1em;
   }
   footer {
@@ -583,7 +586,14 @@ aside .signup-form input {
   footer h4 {
     margin: 0;
     padding-bottom: 35px;
+    /* tablet: 24/auto --> lh 28.8 */
+    font-size: 1.5em;
+    line-height: 1.2;
   } 
+  footer a {
+    /* tablet: 14/24 --> lh 26 ; font size is same as mobile*/
+    line-height: 1.857;
+  }
   footer .contact, footer .social {
     width: 50%;
   }
@@ -677,6 +687,7 @@ aside .signup-form input {
     /* tablet: 36/auto -->  lh 43.2 */
     font-size: 2.25em;
     line-height: 1.2;
+    width: 95%;
   }
   .mission-content p {
     width: 45%;
@@ -747,23 +758,75 @@ aside .signup-form input {
   {
     width: 80%;
   } 
+  header nav a {
+    /* desktop: 18/auto --> lh 21.6 */
+    font-size: 1.125em;
+  }
+  footer h4 {
+    /* desktop: 30/auto --> lh 36 ; only size changed */
+    font-size: 1.875em;
+  }
+  footer a {
+    /* desktop: 18/24 --> lh 30 */
+    font-size: 1.125em;
+    line-height: 1.667;
+  }
+  .copyright p {
+    /* desktop: 18/auto --> lh 21.6; only size changed */
+    font-size: 1.125em;
+  }
 
-/**************************** styles for main page content *******************/
+
+/**************************** changed styles for main page content *******************/
   .hero-area h1 {
     width: 70%;
+    /* desktop: 60/auto --> lf 72 */
+    font-size: 3.75em;
+    line-height: 1.2;
   }
   aside .content-wrapper {
     justify-content: space-around;
     /* align-items: flex-start; */
   }
-
+  aside h3,
+  .home-page .reviews h3 {
+    /* desktop: 30/auto --> lf 36 */
+    font-size: 1.875em;
+    line-height: 1.2;    
+  }
+  aside p {
+    /* desktop: 18/24 --> lf 30 */
+    font-size: 1.125em;
+    line-height: 1.667;    
+  }
+  .email-address {
+    /* desktop: 18/auto --> lf 21.6 */
+    font-size: 1.125em;
+    /* line-height: 1.2; */
+  }
+  .button {
+    /* desktop: 24/auto --> lf 28.8 */
+    font-size: 1.5em;
+  }
   aside .form-description,
   aside .signup-form {
     width: 33.3%;
   }
   aside .signup-form input {
     height: 50px;
-}
+  }
+  .features h2 {
+    /* desktop: 36/auto --> lh 43.2 only lh changes*/
+  /* font-size: 2.25em; */
+  line-height: 1.2;
+  }
+  .features .feature-description,
+  .reviews p {
+    /* desktop: 18/24 --> lh 30 */
+    font-size: 1.125em;
+    line-height: 1.667;
+  }
+  
   .features article {
     width: 26%; /* can't be lower because then get four items across*/
   }
@@ -771,6 +834,44 @@ aside .signup-form input {
   .reviews article .lacrue-review {
     width: 48%;
   }
+/**************************** changed styles for about page content *******************/
+  .mission h2 {
+    /* desktop: 48/auto -->  lh 57.6 , only need font size*/
+    font-size: 3em;
+  }
+  .mission-content p {
+    /* desktop 18/24 --> lh 30 */
+    font-size: 1.125em;
+    line-height: 1.667;
+  }
+  .contact-section h2 {
+    /* desktop: 48/72 --> lh 84px */
+    font-size: 3em;
+    line-height: 1.75;
+  }
+  .contact-section h4 {
+    /* desktop: 30/auto --> lh 36; don't need to respecify lh*/
+    font-size: 1.875em;
+  }
+  .contact-content p {
+    /* desktop: 18/auto --> lh 21.6 */
+    font-size: 1.125em;
+    line-height: 1.2;
+  }
+
+  /**************************** changed styles for faq page content *******************/
+  .faq-page h2 {
+    /* desktop: 48/auto -->  lh 57.6 */
+    font-size: 3em;
+    line-height: 1.2;
+  }
+  .faq-page h4,
+  .faq-page p {
+    /* desktop: 18/18 --> lh 27 */
+    font-size: 1.125em;
+    line-height: 1.5;
+  }
+  
 }
 /* @media only screen and (min-width: 35em) { */
   /* Style adjustments for viewports that meet the condition */
