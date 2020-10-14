@@ -90,7 +90,10 @@ textarea {
 body {
   background-color: rgb(191, 191, 211);
 }
-/* General Styles */
+
+/***************************************************
+      ||  General site-wide content styles  
+****************************************************/
 /* ***later go back and merge these with identically named identifiers */
  
 html {
@@ -101,11 +104,33 @@ body {
   font-family: 'Open Sans', sans-serif;  /* default font */
   font-size: 1em;
 }
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  /* mobile: 36/auto --> lh 43.2 */
+  font-size: 2.25em;
+  line-height: 1.2;
+}
+h2 {
+  /* mobile: 30/auto --> lh 36 */
+  font-size: 1.875em;
+  line-height: 1.2;
+}
  
-ul {
+h3, 
+h4 {
+  /* mobile: 18/auto --> lh 21.6 */
+  font-size: 1.125em;
+  line-height: 1.2;
+} 
+
+/* ul { */
   /* font-family: 'Open Sans', sans-serif;  */ /* needed? */
   /* font-size: 1.125em; 18 pt mobile */
-}
+/* } */
  
 a {
   color: #e2e3ed;
@@ -116,28 +141,6 @@ a {
   line-height: 1.2;
   font-weight: bold;
 }
-
-h1 {
-  font-family: 'Poppins', sans-serif;
-  /* mobile: 36/auto --> lh 43.2 */
-  font-size: 2.25em;
-  line-height: 1.2;
-}
-h2 {
-  font-family: 'Poppins', sans-serif;
-  /* mobile: 30/auto --> lh 36 */
-  font-size: 1.875em;
-  line-height: 1.2;
-}
- 
-h3, 
-h4 {
-  font-family: 'Poppins', sans-serif;
-  /* mobile: 18/auto --> lh 21.6 */
-  font-size: 1.125em;
-  line-height: 1.2;
-}
-
  
 p {
   /* mobile: 14/18 --> lh 23 */
@@ -145,76 +148,41 @@ p {
   line-height: 1.643;
 }
  
-img {
- 
-}
- 
-figure {
- 
-}
- 
-address {
+address { /* in both footer for all files, and about page contact */
   font-style: normal;
 }
  
-.content-wrapper {
+/* .content-wrapper {
  
-}
-.email-address {
-  /* font-style: italic; moves to input[type=text] */
-  /* font-family: 'Open Sans', sans-serif; */ /* needed? */
-  font-size: 0.875em;
-  line-height: 1.2;
-}
-/* temporary until later step when button formally addressed */
-.button {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
-  line-height: 1.2;
-  text-transform: uppercase;  
-}
-footer a {
-  /* mobile: 14/auto --> lh 16.8 */
-  font-size: 0.875em;
-  line-height: 1.2;
-  text-transform: none;
-}
-.copyright p {
-  line-height: 1.2;
-}
-.contact-content p {
-  /* mobile: 14/auto --> lh 16.8 */
-  line-height: 1.2;
-}
+} */
 
-
-/*--------------- Base header and footer styles -------------------------*/
+/* || Base header and footer styles ------------------------------ */
 header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes */
 }
-header {
-  padding: 15px 0 20px 0;
-}
 .content-wrapper {
   width: 90%;
   border: red 1px solid; /*for testing only*/
 }
 
-header .content-wrapper
- {
+/* header only */
+header {
+  padding: 15px 0 20px 0;
+}
+header .content-wrapper {
+  width: 100%; /*setting 100% here to allow for the header-divider to be the full width*/
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%; /*setting 100% here to allow for the header-divider to be the full width*/
 }
 .logo {
+  width: 60%;
   display: flex;
   justify-content: center;
-  width: 60%;
 }
 .header-divider {
   width: 100%;
@@ -223,23 +191,22 @@ header .content-wrapper
   margin: 10px 0 15px 0;;
 }
 header nav  {
+  width: 100%;
   display: flex;
   justify-content: space-around; /* both here and in ul? */
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes */
-  width: 100%;
 }
 header nav ul {
+  width: 45%;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 45%;
   padding: 0; /*override default*/
   margin: 0; /*override default*/
 }
-/* footer address, footer .social {
-  border: royalblue dotted 1px;
-} */
+
+/* footer only */
 footer {
   flex-direction: column; /* supercedes the flex-flow above; answer key does NOT do this yet */ 
 }
@@ -248,21 +215,36 @@ footer .content-wrapper {
   margin-bottom: 50px;
   text-align: center; 
 }
+footer .contact, footer .social {
+  padding-top: 50px;
+}
+/* footer address, footer .social {
+  border: royalblue dotted 1px;
+} */
+footer h4 {
+  margin: 0;
+  padding-bottom: 15px;
+}
+footer a {
+  /* mobile: 14/auto --> lh 16.8 */
+  font-size: 0.875em;
+  line-height: 1.2;
+  text-transform: none;
+}
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-footer h4 {
-  margin: 0;
-  padding-bottom: 15px;
+.copyright p {
+  line-height: 1.2;
 }
-footer .contact, footer .social {
-  padding-top: 50px;
-}
+
 /***************************************************
-        Home page main content  
+      ||  Home page main content  
 ****************************************************/
+
+/* || Hero area ----------------------- */
 .hero-area {
   display: flex;
   flex-direction: column;
@@ -277,6 +259,8 @@ footer .contact, footer .social {
 .hero-area h1 {
   padding-top: 55px;
 }
+
+/* || Aside ----------------------- */
 aside, .features, .reviews {
   display: flex;
   flex-direction: column;
@@ -308,7 +292,6 @@ aside .form-description {
   padding: 35px 0 30px 0;
   width: 100%; /*100% of containing element*/
 }
-
 /* should signup-form be just form instead*/
 aside .signup-form {
   display: flex;
@@ -320,6 +303,21 @@ aside .signup-form {
   padding: 35px 0 30px 0;
   width: 100%; /*100% of containing element*/
 }
+
+.email-address {
+  /* font-style: italic; moves to input[type=text] */
+  /* font-family: 'Open Sans', sans-serif; */ /* needed? */
+  font-size: 0.875em;
+  line-height: 1.2;
+}
+/* temporary until later step when button formally addressed */
+.button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  line-height: 1.2;
+  text-transform: uppercase;  
+}
+
 input[type=text] {
   /* enter contact email here */
   box-sizing: border-box;
@@ -353,10 +351,16 @@ aside .signup-form input {
   height: 50px;
   margin-bottom: 20px;
 }
+
+/* || Home page content (features and reviews sections) ----------------------- */
+
 .home-page section h2 {
   margin: 0;
-  padding: 55px 0 0 0;
+  /* padding: 55px 0 0 0; */
 }
+
+/* || Features section ----------------------- */
+
 .features .content-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -364,6 +368,9 @@ aside .signup-form input {
   flex-flow: row wrap; /* not sure what difference this makes, but it got rid
   of problem of header not being justified left */
   padding-bottom: 65px;
+}
+.features h2 {
+  padding: 55px 0 0 0;
 }
 .features .features-items {
   display: flex;
@@ -386,6 +393,7 @@ aside .signup-form input {
   padding: 50px 0 40px 0;
 }
 
+/* || Reviews section ----------------------- */
 .reviews .content-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -393,15 +401,15 @@ aside .signup-form input {
   flex-flow: row wrap; /* not sure what difference this makes */
   padding-bottom: 45px;
 }
-.home-page .reviews .image-placeholder {
+.reviews .image-placeholder {
   width: 100%;
   height: 200px;
   border: hotpink dotted 1px;
 }
-.image-placeholder p {
+.image-placeholder p { /* this just until image is inserted */
   text-align: center;
 }
-.home-page .reviews h2 {
+.reviews h2 {
   padding: 55px 0 30px 0;
   /* mobile: 30/30 --> lh 45  */
   line-height: 1.5; 
@@ -415,7 +423,7 @@ aside .signup-form input {
 }
 
 /***************************************************
-        FAQ page main content  
+      ||   FAQ page main content  
 ****************************************************/
 /* is this one needed? */
 .faq-page {
@@ -427,12 +435,6 @@ aside .signup-form input {
 .faq-page .content-wrapper {
   margin: 50px 0 0 0;
 }
-.faq-page .questions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap; /* not sure what difference this makes */
-}
 .faq-page h2 {
   margin-bottom: 40px;
   /* mobile: 30/30 --> lh 45 */
@@ -441,6 +443,13 @@ aside .signup-form input {
 .faq-page h4 {
   /* mobile: 18/24 --> lh 30 */
   line-height: 1.333;
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; /* not sure what difference this makes */
 }
 .question {
   margin-bottom: 50px;
@@ -461,6 +470,10 @@ aside .signup-form input {
   border: blueviolet 1px solid;
 
 } */
+.contact-content p {
+  /* mobile: 14/auto --> lh 16.8 */
+  line-height: 1.2;
+}
 
 /* temporary: make space for map */
 .map {
@@ -473,6 +486,7 @@ aside .signup-form input {
   text-align: center;
 }
 
+/* || End of code for primary styles; media queries for responsive design below */
 
 /* ==========================================================================
    Helper classes
@@ -557,9 +571,8 @@ aside .signup-form input {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   || Media Queries for Responsive Design.
+   || These styles override the primary ('mobile first') styles.
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
@@ -595,16 +608,19 @@ aside .signup-form input {
     font-size: 1em;
   }
   footer {
-    flex-direction: row wrap;
+    /* flex-direction: row wrap; */
+    flex-flow: row wrap;
     justify-content: space-around;
   }
   .footer-content {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    flex-direction: row wrap;
+    /* flex-direction: row wrap; */
+    flex-flow: row wrap;
   }
   footer .contact, footer .social {
+    width: 50%;
     padding-top: 90px;
   } 
   footer h4 {
@@ -618,9 +634,6 @@ aside .signup-form input {
     /* tablet: 14/24 --> lh 26 ; font size is same as mobile*/
     line-height: 1.857;
   }
-  footer .contact, footer .social {
-    width: 50%;
-  }
   footer .social-icons {
     justify-content: space-around;
     margin: 0 75px;
@@ -632,7 +645,7 @@ aside .signup-form input {
     font-size: 3em;
     line-height: 1.5; 
   }
-  h3 { /* ***right now just for aside, but I don't think it's needed anywhere else */
+  h3 { /* ***right now just for aside and reviews, but I don't think it's needed anywhere else */
     /* tablet: 24/30 -> lh 39px */
     font-size: 1.5em;
     line-height: 1.625; 
@@ -645,8 +658,9 @@ aside .signup-form input {
   aside .signup-form {
     width: 45%;
   }
-  aside .content-wrapper h3, aside .content-wrapper input {
-    width: 100%;
+  aside .content-wrapper h3, 
+  aside .content-wrapper input {
+      width: 100%;
   }
   aside .content-wrapper h3 {
     padding-bottom: 15px;
@@ -676,12 +690,12 @@ aside .signup-form input {
     width: 100%;
   }
 
-  .home-page .reviews h2 {
+  .reviews h2 {
     /* tablet: 36/auto --> lh 43.2 */
     font-size: 2.25em;
     line-height: 1.2;
   }
-  .home-page .reviews h3 {
+  .reviews h3 {
     /* tablet: 24/30 --> lh 39 */
     font-size: 1.5em; 
     line-height: 1.625; 
