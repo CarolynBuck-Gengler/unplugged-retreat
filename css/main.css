@@ -98,12 +98,12 @@ html {
 }
  
 body {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Open Sans', sans-serif;  /* default font */
   font-size: 1em;
 }
  
 ul {
-  font-family: 'Open Sans', sans-serif; 
+  /* font-family: 'Open Sans', sans-serif;  */ /* needed? */
   /* font-size: 1.125em; 18 pt mobile */
 }
  
@@ -161,8 +161,8 @@ address {
  
 }
 .email-address {
-  font-style: italic;
-  font-family: 'Open Sans', sans-serif;
+  /* font-style: italic; moves to input[type=text] */
+  /* font-family: 'Open Sans', sans-serif; */ /* needed? */
   font-size: 0.875em;
   line-height: 1.2;
 }
@@ -309,14 +309,38 @@ aside .form-description {
   width: 100%; /*100% of containing element*/
 }
 
+/* should signup-form be just form instead*/
 aside .signup-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0;
+  /* should margin-top be 30px?  */
   padding: 35px 0 30px 0;
   width: 100%; /*100% of containing element*/
+}
+input[type=text] {
+  /* enter contact email here */
+  box-sizing: border-box;
+  width: 100%;
+  color: #9d9ea4;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  /* padding: 20px 0; */
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 aside .signup-form h3 {
