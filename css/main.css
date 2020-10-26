@@ -104,6 +104,7 @@ body {
   font-family: 'Open Sans', sans-serif;  /* default font */
   font-size: 1em;
   background-color: #527158;
+  color: #e2e3ed; /* default color for most text */
 }
 
 h1, h2, h3, h4 {
@@ -211,6 +212,7 @@ header nav ul {
 /* footer only */
 footer {
   flex-direction: column; /* supercedes the flex-flow above; answer key does NOT do this yet */ 
+  color: #ffffff;
 }
 footer .content-wrapper {
   width: 60%;
@@ -328,6 +330,8 @@ input[type=text] {
   /* enter contact email here */
   box-sizing: border-box;
   width: 100%;
+  background-color: #e1e2ea;
+  border: 0;
   color: #9d9ea4;
   font-style: italic;
   padding: 1em;
@@ -391,6 +395,9 @@ aside .signup-form input {
 .features p {
   text-align: center;
   margin: 0;
+}
+.feature-description {
+  color: #e1e2ea;
 }
 /* next for testing only, until icons are added  */
 .feature-icon {
@@ -483,9 +490,13 @@ aside .signup-form input {
   border: blueviolet 1px solid;
 
 } */
+.contact-section h4 {
+  color: #ffffff;
+}
 .contact-content p {
   /* mobile: 14/auto --> lh 16.8 */
   line-height: 1.2;
+  color: #e1e2ea;
 }
 
 /* temporary: make space for map */
