@@ -236,6 +236,10 @@ footer .social-icons {
   justify-content: space-around;
   align-items: center;
 }
+.copyright {
+  width: 60%;
+  text-align: center;
+}
 .copyright p {
   line-height: 1.2;
 }
