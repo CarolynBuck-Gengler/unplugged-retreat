@@ -87,9 +87,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* for testing purposes ONLY */
-body {
+/* body {
   background-color: rgb(191, 191, 211);
-}
+} */
 
 /***************************************************
       ||  General site-wide content styles  
@@ -103,6 +103,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;  /* default font */
   font-size: 1em;
+  background-color: #527158;
 }
 
 h1, h2, h3, h4 {
@@ -162,6 +163,7 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes */
+  background-color: #202322;
 }
 .content-wrapper {
   width: 90%;
@@ -398,6 +400,9 @@ aside .signup-form input {
 }
 
 /* || Reviews section ----------------------- */
+.reviews {
+  background-color: #2a423a;
+}
 .reviews .content-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -468,6 +473,10 @@ aside .signup-form input {
   align-items: center;
   flex-direction: column;
 }
+.contact-section {
+  background-color: #2a423a;
+}
+
 /* .mission .content-wrapper,
 .contact-section .content-wrapper {
   color: blueviolet;
@@ -583,9 +592,9 @@ aside .signup-form input {
 /********************* Tablet styles here ************************************/
 /********************* body, header, and footer styles for tablet ************/
   /* for testing purposes ONLY */
-  body {
+  /* body {
     background-color: rgb(211, 183, 187);
-  }
+  } */
   .content-wrapper,
   header .content-wrapper,
   footer .content-wrapper
@@ -787,9 +796,9 @@ aside .signup-form input {
 /********************* body, header, and footer styles for tablet ************/
 
 /* for testing purposes */
-  body {
+  /* body {
     background-color: rgb(160, 186, 232);
-  }
+  } */
   /* .features .content-wrapper {
     width: 80%;
   } */
