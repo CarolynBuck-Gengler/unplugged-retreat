@@ -363,7 +363,10 @@ aside .signup-form input {
 }
 
 /* || Features section ----------------------- */
-
+.features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
+}
 .features .content-wrapper {
   display: flex;
   justify-content: flex-start;
