@@ -154,6 +154,12 @@ address { /* in both footer for all files, and about page contact */
   font-style: normal;
 }
  
+img {
+  width: 100%;
+}
+figure {
+  margin: 0;
+}
 /* .content-wrapper {
  
 } */
@@ -730,7 +736,7 @@ aside .signup-form input {
     align-items: flex-start;
     flex-flow: row wrap;
   }
-  .home-page .reviews article .image-placeholder, 
+  .home-page .reviews article .image-placeholder, figure,
   .reviews article .lacrue-review {
     width: 48.75%;
   }
