@@ -197,7 +197,8 @@ header .content-wrapper {
   width: 100%;
 }
 .header-divider hr {
-  margin: 10px 0 15px 0;;
+  margin: 10px 0 20px 0;
+  border-top-color: #3a3a3a;
 }
 header nav  {
   width: 100%;
@@ -613,6 +614,7 @@ aside .signup-form input {
   footer .content-wrapper
   {
     width: 83%;
+    max-width: 640px;
   } 
   header {
     padding: 30px 0 30px 0;
@@ -621,8 +623,11 @@ aside .signup-form input {
     justify-content: space-between;
     height: 40px;
   }
-  header .logo, header nav {
-    width: 40%;
+  header .logo {
+    width: 35%;
+  }
+  header nav {
+    width: 45%;
   }
   header .logo {
     justify-content: flex-start;
@@ -740,7 +745,9 @@ aside .signup-form input {
     align-items: flex-start;
     flex-flow: row wrap;
   }
-  .home-page .reviews article .image-placeholder, figure,
+  /* figure, */
+  .home-page .reviews article .image-placeholder,
+  .home-page .reviews article figure,
   .reviews article .lacrue-review {
     width: 48.75%;
   }
@@ -829,12 +836,16 @@ aside .signup-form input {
   /* .hero-area .content-wrapper  */
   {
     width: 80%;
+    max-width: 960px;
   } 
   header {
-    padding: 30px 0 30px 0;
+    padding: 25px 0 25px 0;
   }
   header .content-wrapper {
     height: 50px;
+  }
+  header .logo {
+    width: 30%;
   }
   header nav a {
     /* desktop: 18/auto --> lh 21.6 */
