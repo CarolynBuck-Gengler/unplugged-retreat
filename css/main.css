@@ -146,9 +146,9 @@ a {
 }
  
 p {
-  /* mobile: 14/18 --> lh 23 */
+  /* mobile: 14/18 */
   font-size: 0.875em;
-  line-height: 1.643;
+  line-height: 1.285;
 }
  
 address { /* in both footer for all files, and about page contact */
@@ -241,6 +241,7 @@ footer a {
   /* mobile: 14/auto --> lh 16.8 */
   font-size: 0.875em;
   line-height: 1.2;
+  font-weight: 400;
   text-transform: none;
 }
 footer .social-icons {
@@ -431,8 +432,8 @@ aside .signup-form input {
 }
 .reviews h2 {
   padding: 55px 0 30px 0;
-  /* mobile: 30/30 --> lh 45  */
-  line-height: 1.5; 
+  /* mobile: 30/30 */
+  line-height: 1; 
 }
 .reviews h3 {
   margin: 0;
@@ -457,11 +458,11 @@ aside .signup-form input {
 }
 .faq-page h2 {
   margin-bottom: 40px;
-  /* mobile: 30/30 --> lh 45 */
-  line-height: 1.5;
+  /* mobile: 30/30 */
+  line-height: 1; 
 }
 .faq-page h4 {
-  /* mobile: 18/24 --> lh 30 */
+  /* mobile: 18/24 */
   line-height: 1.333;
 }
 
@@ -667,8 +668,8 @@ aside .signup-form input {
     line-height: 1.2;
   } 
   footer a {
-    /* tablet: 14/24 --> lh 26 ; font size is same as mobile*/
-    line-height: 1.857;
+    /* tablet: 14/24 ; font size is same as mobile */
+    line-height: 1.714;
   }
   footer .social-icons {
     justify-content: space-around;
@@ -677,18 +678,18 @@ aside .signup-form input {
   /**************************** styles for main page content *******************/
   .hero-area h1 {
     width: 85%;
-    /*tablet: 48/48 -> lh 72px  */
+    /*tablet: 48/48 */
     font-size: 3em;
-    line-height: 1.5; 
+    line-height: 1; 
   }
   .hero-area h1 {
     padding-top: 90px;
     padding-bottom: 415px;
   }
   h3 { /* ***right now just for aside and reviews, but I don't think it's needed anywhere else */
-    /* tablet: 24/30 -> lh 39px */
+    /* tablet: 24/30 */
     font-size: 1.5em;
-    line-height: 1.625; 
+    line-height: 1.25; 
   }
   aside .content-wrapper {
     justify-content: space-between;
@@ -711,9 +712,9 @@ aside .signup-form input {
 
   .features h2,
   .faq-page h2 {
-    /* tablet: 36/48 --> lh 60px */
+    /* tablet: 36/48 */
     font-size: 2.25em;
-    line-height: 1.667; 
+    line-height: 1.333; 
   }
   .features .features-items {
     justify-content: space-around;
@@ -734,11 +735,12 @@ aside .signup-form input {
     /* tablet: 36/auto --> lh 43.2 */
     font-size: 2.25em;
     line-height: 1.2;
+    padding-right: 100px;
   }
   .reviews h3 {
-    /* tablet: 24/30 --> lh 39 */
-    font-size: 1.5em; 
-    line-height: 1.625; 
+    /* tablet: 24/30 */
+    font-size: 1.5em;
+    line-height: 1.25; 
   }
   .reviews article {
     display: flex;
@@ -774,9 +776,9 @@ aside .signup-form input {
   }
   .contact-section h2 {
     width: 85%;
-    /* tablet: 36/48 --> lh 60px */
+    /* tablet: 36/48 */
     font-size: 2.25em;
-    line-height: 1.667;
+    line-height: 1.333;
   }
   .contact-section h4 {
     /* tablet: 24/auto --> lh 28.8; don't need to respecify lh*/
@@ -791,8 +793,8 @@ aside .signup-form input {
     width: 45%;
   }
   .contact-content p {
-    /* tablet: 14/18 instead of 14/auto -->  lh 23px  */
-    line-height: 1.643;
+    /* tablet: 14/18 instead of 14/auto */
+    line-height: 1.285;
   }
 
   /**************************** styles for faq page content *******************/
@@ -801,9 +803,9 @@ aside .signup-form input {
     justify-content: space-between;
   }
   .faq-page h4 {
-    /* tablet 14/18 --> 23px */
+    /* tablet 14/18 */
     font-size: 0.875em;
-    line-height: 1.643;
+    line-height: 1.285;
   }
   .faq-page .content-wrapper {
     display: flex;
@@ -849,17 +851,17 @@ aside .signup-form input {
     width: 30%;
   }
   header nav a {
-    /* desktop: 18/auto --> lh 21.6 */
+    /* desktop: 18/auto */
     font-size: 1.125em;
   }
   footer h4 {
-    /* desktop: 30/auto --> lh 36 ; only size changed */
+    /* desktop: 30/auto ; only size changed */
     font-size: 1.875em;
   }
   footer a {
-    /* desktop: 18/24 --> lh 30 */
+    /* desktop: 18/24 */
     font-size: 1.125em;
-    line-height: 1.667;
+    line-height: 1.333;
   }
   .copyright p {
     /* desktop: 18/auto --> lh 21.6; only size changed */
@@ -889,19 +891,20 @@ aside .signup-form input {
     line-height: 1.2;    
   }
   aside p {
-    /* desktop: 18/24 --> lf 30 */
+    /* desktop: 18/24 */
     font-size: 1.125em;
-    line-height: 1.667;    
+    line-height: 1.333;
   }
   .email-address {
     /* desktop: 18/auto --> lf 21.6 */
     font-size: 1.125em;
-    /* line-height: 1.2; */
+    /* line-height: 1.2; ***verify don't need to respecify */
   }
-  .button {
+  input[type=button] {
     /* desktop: 24/auto --> lf 28.8 */
     font-size: 1.5em;
   }
+  
   aside .form-description,
   aside .signup-form {
     width: 33.3%;
@@ -916,9 +919,9 @@ aside .signup-form input {
   }
   .features .feature-description,
   .reviews p {
-    /* desktop: 18/24 --> lh 30 */
+    /* desktop: 18/24 */
     font-size: 1.125em;
-    line-height: 1.667;
+    line-height: 1.333;    
   }
   
   .features article {
@@ -934,14 +937,15 @@ aside .signup-form input {
     font-size: 3em;
   }
   .mission-content p {
-    /* desktop 18/24 --> lh 30 */
+    /* desktop: 18/24 */
     font-size: 1.125em;
-    line-height: 1.667;
+    line-height: 1.333;
   }
   .contact-section h2 {
-    /* desktop: 48/72 --> lh 84px */
+    width: 100%;
+    /* desktop: 48/72 */
     font-size: 3em;
-    line-height: 1.75;
+    line-height: 1.5;
   }
   .contact-section h4 {
     /* desktop: 30/auto --> lh 36; don't need to respecify lh*/
@@ -961,9 +965,9 @@ aside .signup-form input {
   }
   .faq-page h4,
   .faq-page p {
-    /* desktop: 18/18 --> lh 27 */
+    /* desktop: 18/18 */
     font-size: 1.125em;
-    line-height: 1.5;
+    line-height: 1;
   }
   
 }
