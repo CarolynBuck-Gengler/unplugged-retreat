@@ -224,11 +224,11 @@ footer {
 }
 footer .content-wrapper {
   width: 60%;
-  margin-bottom: 50px;
+  margin: 5px 0 50px 0;
   text-align: center; 
 }
 footer .contact, footer .social {
-  padding-top: 50px;
+  padding-top: 45px;
 }
 /* footer address, footer .social {
   border: royalblue dotted 1px;
@@ -277,7 +277,7 @@ footer .social-icons {
 }
 .hero-area h1 {
   padding-top: 55px;
-  padding-bottom: 335px;
+  padding-bottom: 330px;
   margin: 0; /*turn off default*/
 }
 
@@ -310,7 +310,7 @@ aside .form-description {
   align-items: flex-start;
   flex-direction: column;
   margin: 0;
-  padding: 35px 0 30px 0;
+  padding: 30px 0 5px 0;
   width: 100%; /*100% of containing element*/
 }
 /* should signup-form be just form instead*/
@@ -321,7 +321,7 @@ aside .signup-form {
   flex-direction: column;
   margin: 0;
   /* should margin-top be 30px?  */
-  padding: 35px 0 30px 0;
+  padding: 30px 0 40px 0;
   width: 100%; /*100% of containing element*/
 }
 
@@ -342,7 +342,7 @@ input[type=button] {
   width: 100%;
   /* padding: 20px 0; */
   line-height: 1.2;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -352,16 +352,18 @@ input[type=button] {
   text-align: center;
   text-transform: uppercase;
 }
-
+aside .form-description h3 {
+  padding-bottom: 10px;
+}
 aside .signup-form h3 {
   margin: 0;
-  padding: 0 0 15px 0;
+  padding-bottom: 15px;
   width: inherit;
 }
 aside .signup-form input {
   width: inherit;
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* || Home page content (features and reviews sections) ----------------------- */
@@ -382,10 +384,10 @@ aside .signup-form input {
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes, but it got rid
   of problem of header not being justified left */
-  padding-bottom: 65px;
+  padding-bottom: 70px;
 }
 .features h2 {
-  padding: 55px 0 0 0;
+  padding: 50px 0 0 0;
 }
 .features .features-items {
   display: flex;
@@ -408,7 +410,7 @@ aside .signup-form input {
 .feature-icon {
   /* text-align: center; for now */
   color: red;
-  padding: 50px 0 40px 0;
+  padding: 60px 0 40px 0;
 }
 
 /* || Reviews section ----------------------- */
@@ -437,7 +439,7 @@ aside .signup-form input {
 }
 .reviews h3 {
   margin: 0;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 25px 0;
 }
 .reviews p {
   margin: 0;
