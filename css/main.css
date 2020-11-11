@@ -830,6 +830,9 @@ aside .signup-form input {
     width: 47%;
     margin-top: 35px;
   }
+  .map figure {
+    padding-bottom: 46%;
+  }
   .contact-section h2 {
     width: 85%;
     /* tablet: 36/48 */
@@ -1041,7 +1044,10 @@ aside .signup-form input {
     font-size: 1.125em;
     line-height: 1.333;
     margin-top: 30px;
-}
+  }
+  .map figure {
+    padding-bottom: 37.5%;
+  }
   .contact-section h2 {
     width: 100%;
     /* desktop: 48/72 */
