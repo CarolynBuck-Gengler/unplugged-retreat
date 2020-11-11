@@ -456,16 +456,18 @@ aside .signup-form input {
   flex-flow: row wrap;
 }
 .faq-page .content-wrapper {
-  margin: 50px 0 0 0;
+  /* margin: 45px 0 0 0; */
 }
 .faq-page h2 {
-  margin-bottom: 40px;
+  margin: 45px 0;
+  /* margin-bottom: 40px; */
   /* mobile: 30/30 */
   line-height: 1; 
 }
 .faq-page h4 {
   /* mobile: 18/24 */
   line-height: 1.333;
+  margin: 0 0 10px 0;
 }
 
 .questions {
@@ -474,48 +476,61 @@ aside .signup-form input {
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes */
 }
-.question {
-  margin-bottom: 50px;
+.question p {
+  margin-bottom: 45px;
 }
+/* .question {
+  margin-bottom: 50px;
+} */
 
 /***************************************************
         About page main content  
 ****************************************************/
+.about-page h2 {
+  margin: 0;
+}
 .mission,
 .contact-section {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.contact-section {
-  background-color: #2a423a;
-}
 
-/* .mission .content-wrapper,
-.contact-section .content-wrapper {
-  color: blueviolet;
-  border: blueviolet 1px solid;
-
-} */
-.contact-section h4 {
-  color: #ffffff;
+.mission .content-wrapper {
+  margin: 50px 0 45px 0;
 }
-.contact-content p {
-  /* mobile: 14/auto --> lh 16.8 */
-  line-height: 1.2;
-  color: #e1e2ea;
+.mission-content p {
+  margin: 15px 0 0 0;
 }
 
 /* temporary: make space for map */
 .map {
   border: hotpink 1px dotted;
-  padding: 40px 0;
-  margin: 30px 0;
+  padding: 100px 0; /* just to make pretend map area bigger */
+  margin: 0;
   width: 100%;
 }
 .map p {
   text-align: center;
 }
+
+.contact-section {
+  background-color: #2a423a;
+}
+.contact-section .content-wrapper {
+  margin: 50px 0;
+}
+.contact-section h4 {
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+}
+.contact-section p {
+  margin: 0;
+  /* mobile: 14/auto --> lh 16.8 */
+  line-height: 1.2;
+  color: #e1e2ea;
+}
+
 
 /* || End of code for primary styles; media queries for responsive design below */
 
@@ -787,14 +802,19 @@ aside .signup-form input {
     display: flex;
     justify-content: space-between;
   }
+  .mission .content-wrapper, .contact-section .content-wrapper {
+    margin: 95px 0;
+  }
+  
   .mission h2 {
     /* tablet: 36/auto -->  lh 43.2 */
     font-size: 2.25em;
     line-height: 1.2;
-    width: 95%;
+    /* width: 95%; */
   }
   .mission-content p {
-    width: 45%;
+    width: 47%;
+    margin-top: 35px;
   }
   .contact-section h2 {
     width: 85%;
@@ -805,7 +825,8 @@ aside .signup-form input {
   .contact-section h4 {
     /* tablet: 24/auto --> lh 28.8; don't need to respecify lh*/
     font-size: 1.5em;
-  }
+    margin: 50px 0 15px 0;
+}
   .contact-content {
     display: flex;
     justify-content: space-between;
@@ -824,10 +845,14 @@ aside .signup-form input {
     flex-direction: column;
     justify-content: space-between;
   }
+  .faq-page h2 {
+    margin: 95px 0 40px 0;
+  }
   .faq-page h4 {
     /* tablet 14/18 */
     font-size: 0.875em;
     line-height: 1.285;
+    margin-bottom: 15px;
   }
   .faq-page .content-wrapper {
     display: flex;
@@ -837,9 +862,13 @@ aside .signup-form input {
   .faq-page .questions {
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 60px;
   }
   .question {
-    flex-basis: 45%;
+    flex-basis: 47%;
+  }
+  .question p {
+    margin-bottom: 35px;
   }
 
 }
@@ -997,7 +1026,8 @@ aside .signup-form input {
     /* desktop: 18/24 */
     font-size: 1.125em;
     line-height: 1.333;
-  }
+    margin-top: 30px;
+}
   .contact-section h2 {
     width: 100%;
     /* desktop: 48/72 */
@@ -1007,7 +1037,8 @@ aside .signup-form input {
   .contact-section h4 {
     /* desktop: 30/auto --> lh 36; don't need to respecify lh*/
     font-size: 1.875em;
-  }
+    margin: 25px 0 35px 0;
+}
   .contact-content p {
     /* desktop: 18/auto --> lh 21.6 */
     font-size: 1.125em;
@@ -1019,6 +1050,9 @@ aside .signup-form input {
     /* desktop: 48/auto -->  lh 57.6 */
     font-size: 3em;
     line-height: 1.2;
+  }
+  .faq-page .questions {
+    margin-bottom: 65px;
   }
   .faq-page h4,
   .faq-page p {
