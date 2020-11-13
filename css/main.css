@@ -384,10 +384,10 @@ aside .signup-form input {
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes, but it got rid
   of problem of header not being justified left */
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 .features h2 {
-  padding: 50px 0 0 0;
+  padding: 50px 0 15px 0;
 }
 .features .features-items {
   display: flex;
@@ -395,6 +395,11 @@ aside .signup-form input {
   align-items: center;
   flex-flow: row wrap; /* not sure what difference this makes, 
   definitely not looking right in bigger screen */
+}
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 35px;
+  margin-top: 45px;
 }
 .features article {
   width: 62.5%;
@@ -407,10 +412,10 @@ aside .signup-form input {
   color: #e1e2ea;
 }
 /* next for testing only, until icons are added  */
-.feature-icon {
+.fontawesome-icon {
   /* text-align: center; for now */
-  color: red;
-  padding: 60px 0 40px 0;
+  color:#e2e3ed;
+  /* padding: 60px 0 40px 0; */
 }
 
 /* || Reviews section ----------------------- */
